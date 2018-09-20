@@ -70,6 +70,11 @@ RCT_EXPORT_MODULE();
              };
 }
 
++ (BOOL)requiresMainQueueSetup
+{
+  return NO;
+}
+
 // Fetch blob data request
 RCT_EXPORT_METHOD(fetchBlobForm:(NSDictionary *)options
                   taskId:(NSString *)taskId
